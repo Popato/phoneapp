@@ -1,0 +1,495 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	width: 100%;
+}
+
+/* 清除浮动 */
+.clear{
+	clear: both;
+}
+/* 搜索栏 */
+
+/* 固定住，不随着页面移动而移动 */
+.top{
+	width: 100%;
+	height: 1.4rem;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.search{
+	background: #d43b33;
+	height: 0.7rem;
+}
+.search div{
+	color: #ffffff;
+	font-size: 0.4rem;
+	width: 0.4rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	position: fixed;
+}
+
+.search div:first-child{
+	left:0.25rem;
+}
+
+.search div:last-child{
+	right:0.25rem;
+}
+
+.search input{
+	width: 4.75rem;
+	height: 0.55rem;
+	border-radius: 0.8rem;
+	background: url(../images/search.png) #ffffff 5% 50% /10% 80%;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin-bottom: 0.1rem; 
+	position: fixed;
+	left: 0.85rem;
+	top: 0.07rem;
+}
+
+/* 文字切换 */
+.search-txt{
+	width: 100%;
+	height: 0.7rem;
+	background-color: white;
+	opacity: 0.9;
+
+}
+.search-txt ul li{
+	float: left;
+	font-size: 0.26rem;
+	text-align: center;
+	width: 0.75rem;
+	height: 100%;
+	margin-left:1rem;
+	line-height: 0.7rem;
+}
+
+.botline{
+	border-bottom: 0.04rem red solid; 
+}
+
+/* 底部固定栏 fixed布局*/
+.foot{
+	width: 100%;
+	height: 0.85rem;
+	background: black;
+	z-index: 10;
+	position: fixed;
+	bottom:0rem ;
+}
+.foot-imgp{
+	width: 0.8rem;
+	height: 100%;
+	text-align: center;
+	float: left;
+	margin: 0.1rem 0.4rem;
+}
+.foot-imgp .icon{
+	color: gray;
+	font-size: 0.4rem;
+}
+
+.foot-imgp p{
+	font-size: 0.18rem;
+	color: gray;
+	margin-top:0.02rem; 
+}
+.icon_01 .icon{
+	color: white;
+}
+.icon_01 p{
+	color: white;
+}
+
+/* 模块切换栏 */
+.board{
+	width: 100%;
+	position: relative;
+	top: 1.42rem;
+	height: 4.4rem;
+}
+.kong{
+	width: 100%;
+	height: 0.85rem;
+}
+/* 自动播放 */
+.run{
+	width: 100%;
+	height: 2.6rem;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination{
+	margin-bottom: -0.4rem; 
+}
+
+/* 图标 */
+.board-last{
+	height: 1.8rem;
+	width: 100%;
+	border-bottom: 0.01rem solid #edeef0;
+	display: flex;
+	justify-content: space-around;
+	padding-top:0.3rem;  
+}
+
+.board-last .cc{
+	width: 0.9rem;
+	height: 100%;
+	/* position: absolute; */
+}
+.board-last .cc a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.board-last img{
+	width: 100%;
+	vertical-align: top;
+}
+
+.board-last p{
+	width: 0.9rem;
+	height: 0.4rem;
+	font-size:0.2rem;
+	text-align: center;
+	margin-top: -25px;
+}
+/* 倒计时 */
+.timer{
+	font-size: 0.24rem;
+	width: 100%;
+	text-align: center;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	margin: 0 auto 0 auto;
+	border-bottom: 0.01rem solid #edeef0;
+}
+/* 所有模块的标题 */
+.title{
+	font-size: 0.3rem;
+	border-left: 0.05rem solid #d43b33;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	margin: 0.35rem 0 0.25rem 0;
+	padding-left:0.15rem;
+	color: black; 
+}
+.title img{
+	width: 0.3rem;
+}
+
+/* 推荐歌单 */
+.recommend{
+	width: 100%;
+	margin-top:2.2rem; 
+}
+
+/* 图片 float:left*/
+.recommend_png{
+	width: 100%;
+	height: 5.6rem;
+}
+.recommend_top{
+	width: 100%;
+	height: 2.8rem;
+}
+.recommend_imgp{
+	width: 2.03rem;
+	height: 100%;
+	float: left;
+	margin: 0 0.05rem;
+
+}
+.recommend_imgp img{
+	width: 100%;
+	height: 2.05rem;
+}
+
+.recommend_imgp p{
+	font-size: 0.20rem;
+	width: 100%;
+	height: 0.75rem;
+	text-align: left;
+	padding: 0.05rem 0.05rem;
+	color: black;
+}
+
+.recommend_foot{
+	width: 100%;
+	height: 2.8rem;
+}
+
+/* 独家放送 */
+
+/* 上面的图片 flex布局 */
+.dujia_png{
+
+}
+.dujia_top{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.dujia_imgp{
+	width: 3.0rem;
+	height: 2.6rem;
+}
+
+.dujia_imgp img{
+	width: 100%;
+	height: 1.9rem;
+}
+.dujia_imgp p{
+	font-size: 0.20rem;
+	height: 0.75rem;
+	width: 100%;
+	padding: 0.05rem 0.05rem;
+	color: black;
+}
+
+/* 下面的图片 */
+.dujia_foot{
+	width: 100%;
+	height: 3.0rem;
+	margin-top: 0.25rem;
+}
+.dujia_foot img{
+	width: 100%;
+	height: 2.5rem;
+}
+.dujia_foot p{
+	font-size: 0.20rem;
+	height: 0.5rem;
+	width: 100%;
+	padding: 0 0.1rem;
+	color: black;
+	line-height: 0.5rem;
+}
+/* 类型 下拉列表 */
+.dropdown{
+	width: 2.0rem;
+	height: 0.4rem;
+	position: relative;
+	top: -0.6rem;
+	left: 4.0rem;
+}
+.dropdown img{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 0.4rem;
+	margin-top: -0.01rem;
+}
+.dropdown .drop-select{
+	position: absolute;
+	height: 100%;
+	line-height: 0.4rem;
+	width: 1.2rem;
+	top: 0rem;
+	left: 0.5rem;
+	font-size: 0.20rem;
+	background: #d43b33;
+	border-radius: 0.2rem;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.06rem;
+}
+.dropdown ul{
+	position: absolute;
+	width: 1rem;
+	top: 0.4rem;
+	height: 100%;
+	text-align: center;
+	left: 0.5rem;
+	display: none;
+}
+.dropdown ul li{
+	font-size: 0.22rem;
+	height: 0.4rem;
+	text-align: center;
+	width: 0.8rem;
+	color: #d43b33;
+	line-height: 0.4rem;
+	margin: 0 auto;
+	background: white;
+	opacity: 0.7;
+}
+
+/* 最新音乐	 */
+.new_top{
+	width: 100%;
+	height: 2.9rem;
+}
+
+.new_imgp{
+	width: 2.03rem;
+	height: 100%;
+}
+
+.new_imgp img{
+	width: 100%;
+	height: 2.05rem;
+}
+
+.new_p_toptxt{
+	font-size: 0.22rem;
+	padding: 0.05rem 0 0 0.1rem;
+	color: black;
+}
+.new_p_foottxt{
+	font-size: 0.2rem;
+	padding-left: 0.1rem;
+	color: #a3a4a6;
+}
+/* 上面的图片 */
+.new_imgp:nth-child(1){
+	position: relative;
+	left: 0.05rem;
+}
+.new_imgp:nth-child(2){
+	position: relative;
+	top: -2.9rem;
+	left: 2.19rem;
+}
+.new_imgp:nth-child(3){
+	position: relative;
+	top: -5.8rem;
+	left: 4.32rem;
+}
+
+/* 下面的图片 */
+.new_foot{
+	width: 100%;
+	height: 2.9rem;
+}
+.new_foot .new_imgp:nth-child(1){
+	position: relative;
+	left: 0.05rem;
+}
+
+.new_foot .new_imgp:nth-child(2){
+	position: relative;
+	left: 2.19rem;
+	top: -2.9rem;
+}
+
+.new_foot .new_imgp:nth-child(3){
+	position: relative;
+	left: 4.32rem;
+	top: -5.8rem;
+}
+
+
+/* 推荐MV */
+.remMV{
+	width: 100%;
+	margin-top: -0.2rem;
+}
+
+/* 图片 flex布局 */
+.remMV_top{
+	width: 100%;
+	height: 2.65rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.remMV_png{
+	width: 3.10rem;
+	height: 100%;
+}
+.remMV_png img{
+	width: 100%;
+	height: 1.9rem;
+}
+
+.remMV_foot{
+	width: 100%;
+	height: 2.65rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* 精选专栏 */
+
+.choice_txt{
+	width: 100%;
+	height: 4.5rem;
+}
+
+.choice_imgp{
+	width: 100%;
+	height: 1.5rem;
+	border-top: 0.01rem solid #edeef0;
+	border-bottom: 0.01rem solid #edeef0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.choice_imgp div{
+	font-size: 0.28rem;
+	height: 100%;
+	width: 4.1rem;
+	color: black;
+	padding: 0.2rem 0.2rem 0 0.2rem;
+}
+.choice_imgp div span{
+	font-size: 0.18rem;
+	color: #d43b33;
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.25rem;
+	border: 1px solid #d43b33;
+	text-align: center;
+	line-height: 0.25rem;
+	margin-top: -0.2rem;
+}
+.choice_imgp div p{
+	color: #a3a4a6;
+	font-size: 0.24rem;
+	margin-top: 0.15rem; 
+}
+.choice_imgp img{
+	height: 100%;
+	width: 2.2rem;
+
+}
+
+
+/* 调整栏目顺序 */
+.change{
+	width: 100%;
+	height: 1.25rem;
+	border-top: 1px solid #edeef0;
+	margin-top: 0.2rem;
+}
+
+.change_btn{
+	width: 2.0rem;
+	height: 0.55rem;
+	margin: 0.4rem auto;
+	text-align: center;
+	line-height: 0.55rem;
+	font-size: 0.26rem;
+	color: #d43b33;
+	border: 1px solid #d43b33;
+	border-radius: 0.8rem;
+}
+
+
+
+
+

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云音乐APP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- px转rem的css -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- iconfont图标 -->
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<!-- swiper动画的css -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!-- 自己的css样式 -->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- jquery	 -->
+	<script src="jquery/jquery-1.7.min.js"></script>
+	<!-- px转rem的js -->
+	<script src="js/common.js"></script>
+	<!-- swiper动画的js -->
+	<script src="js/swiper.min.js"></script>
+	<!-- 自己的js -->
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="all">
+		<!-- 搜索栏 -->
+		<div class="top">
+			<div class="search">
+				<div class=" icon iconfont icon-maikefeng"></div>
+				<input type="text" placeholder="搜索音乐、视频、歌词、电台">
+				<div class="icon iconfont icon-yinle"></div>
+			</div>
+			<div class="search-txt">
+				<ul id="change">
+					<li>音乐</li>
+					<li>视频</li>
+					<li>电台</li>
+				</ul>
+			</div>
+		</div>
+
+	
+		<!-- 模块切换栏 -->
+		<div class="board">
+			<!-- swiper动画 -->
+			<div class="swiper-container run">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide">
+		            	<img src="images/run_01.png" alt="">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="images/run_02.png" alt="">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="images/run_03.png" alt="">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="images/run_04.png" alt="">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="images/run_05.png" alt="">
+		            </div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+	   		</div>
+	   		<!-- 图标 fiexl布局-->
+	   		<div class="board-last">
+		   		<div class="cc">
+			   		<a href="#">
+			   			<img src="images/board_01.png" alt="">
+			   			<p>私人FM</p>
+			   		</a>
+		   		</div>
+	   			
+		   		<div class="cc">
+			   		<a href="#">
+			   			<img src="images/board_02.png" alt="">
+			   			<p>每日推荐</p>
+			   		</a>
+		   		</div>
+	   			
+		   		<div class="cc">
+			   		<a href="#">
+			   			<img src="images/board_03.png" alt="">
+			   			<p>歌单</p>
+			   		</a>
+		   		</div>
+	   			
+		   		<div class="cc">
+			   		<a href="#">
+			   			<img src="images/board_04.png" alt="">
+			   			<p>排行榜</p>
+			   		</a>
+		   		</div>
+	   		</div>
+	   		<div class="timer" id="Countdown">距离10月1日还有：<span id="tim"></span></div>
+		</div>
+
+		<!-- 推荐歌单 -->
+		<div class="recommend">
+			<a href="#">
+				<p class="title">推荐歌单 
+					<img src="images/right.png">
+				</p>
+			</a>
+
+			<!-- 图片 float:left -->
+			<div class="recommend_png">
+				<!-- 上面的图片 -->
+				<div class="recommend_top">
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_01.png" alt="">
+							<p>华语|那时年少，我们青春正好...</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_02.png" alt="">
+							<p>怀旧篇|8bit风与人声结合</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_03.png" alt="">
+							<p>『满汉全席(YY40109音乐团队)』</p>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<!-- 下面的图片 -->
+				<div class="recommend_foot">
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_04.png" alt="">
+							<p>【小蛮腰】&nbsp各种喘～污～</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_05.png" alt="">
+							<p>【妖气弥漫】那些妖异的古风歌曲</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/recommend_06.png" alt="">
+							<p>古风男神(精)忘吃药系列</p>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 独家放送 -->
+		<div class="dujia">
+			<a href="#">
+				<p class="title">独家放送 
+					<img src="images/right.png">
+				</p>
+			</a>
+			<div class="dropdown">
+				<img src="images/header-01.png" id="dropimg">
+				<span class="drop-select" id="droptxt">请选择</span>
+				<ul id="dropul">
+					<li>请选择</li>
+					<li>歌曲</li>
+					<li>视频</li>
+					<li>电台</li>
+					<li>专栏</li>	
+				</ul>
+				
+			</div>
+			
+			<!-- 图片 -->
+			<div class="dujia_png">
+				<!-- 上面的图片 flex布局-->
+				<div class="dujia_top">
+					<div class="dujia_imgp">
+						<a href="#">
+							<img src="images/dujia_01.png" alt="">
+							<p>说唱歌手也柔情！这个flow你觉得ok吗</p>
+						</a>
+					</div>
+					<div class="dujia_imgp">
+						<a href="#">
+							<img src="images/dujia_02.png" alt="">
+							<p>律动随心＊精选耳机低至39元起</p>
+						</a>
+					</div>
+				</div>
+
+				<!-- 下面的图片 -->
+				<div class="dujia_foot">
+					<a href="#">
+						<img src="images/dujia_03.png" alt="">
+						<p>蜘蛛侠系列电影燃情混剪！致永不褪色的小蜘蛛</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 最新音乐 -->
+		<div class="new">
+			<a href="#">
+				<p class="title">最新音乐 
+					<img src="images/right.png">
+				</p>
+			</a>
+
+			<!-- 图片  position: relative 相对定位-->
+			<div class="new_png">
+				<!-- 上面的图片 -->
+				<div class="new_top">
+					<div class="new_imgp">
+						<a href="#">
+							<img src="images/new_01.png" alt="">
+							<p class="new_p_toptxt">新歌推荐</p>
+							<p class="new_p_foottxt">推荐合口味的新歌</p>
+						</a>
+					</div>
+					 <div class="new_imgp">
+						<a href="#">
+							<img src="images/new_02.png" alt="">
+							<p class="new_p_toptxt">15分钟的疯狂</p>
+							<p class="new_p_foottxt">许魏洲</p>
+						</a>
+					</div>
+					<div class="new_imgp">
+						<a href="#">
+							<img src="images/new_03.png" alt="">
+							<p class="new_p_toptxt">爱的力量</p>
+							<p class="new_p_foottxt">杨洋</p>
+						</a>
+					</div> 
+				</div>
+
+				<!-- 下面的图片 -->
+				 <div class="new_foot">
+					<div class="new_imgp">
+						<a href="#">
+							<img src="images/new_04.png" alt="">
+							<p class="new_p_toptxt">【满汉】屁股翘翘</p>
+							<p class="new_p_foottxt">满汉全席</p>
+						</a>
+					</div>
+					<div class="new_imgp">
+						<a href="#">
+							<img src="images/new_05.png" alt="">
+							<p class="new_p_toptxt">霹雳天命之仙魔...</p>
+							<p class="new_p_foottxt">霹雳英雄</p>
+						</a>
+					</div>
+					<div class="new_imgp">
+						<a href="#">
+							<img src="images/new_06.png" alt="">
+							<p class="new_p_toptxt">霹雳英雄音乐精...</p>
+							<p class="new_p_foottxt">霹雳英雄</p>
+						</a>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<!-- 推荐MV -->
+		<div class="remMV">
+			<a href="#">
+				<p class="title">推荐MV 
+					<img src="images/right.png">
+				</p>
+			</a>
+
+			<!-- 图片 flex布局-->
+			<div class="remMV_top">
+				<div class="remMV_png">
+					<a href="#">
+						<img src="images/remMV_02.png" alt="">
+						<p class="new_p_toptxt">Wake Me Up When Septe...</p>
+						<p class="new_p_foottxt">J.Fla</p>
+					</a>
+				</div>
+				<div class="remMV_png">
+					<a href="#">
+						<img src="images/remMV_01.png" alt="">
+						<p class="new_p_toptxt">I'M THE ONE KBS音乐银行...</p>
+						<p class="new_p_foottxt">MXM(BRANDNEW BOYS)</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="remMV_foot">
+				<div class="remMV_png">
+					<a href="#">
+						<img src="images/remMV_03.png" alt="">
+						<p class="new_p_toptxt">生死江湖</p>
+						<p class="new_p_foottxt">李常超(Lao乾妈)</p>
+					</a>
+				</div>
+				<div class="remMV_png">
+					<a href="#">
+						<img src="images/remMV_04.png" alt="">
+						<p class="new_p_toptxt">红颜旧</p>
+						<p class="new_p_foottxt">萧忆情Alex/伦桑</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 精选专栏 -->
+		<div class="choice">
+			<a href="#">
+				<p class="title">精选专栏 
+					<img src="images/right.png">
+				</p>
+			</a>
+			<!-- 内容加图片 -->
+			<div class="choice_txt">
+				<a href="#">
+					<div class="choice_imgp">
+						<div>
+							<span>专栏</span>
+						中文说唱在东北，你不能不知道这个名字 S1!
+							<p>阅读 8362</p>
+						</div>
+						
+						<img src="images/choice_01.png" alt="">
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="choice_imgp">
+						<div>
+							<span>专栏</span>
+						《行尸走肉》第八季即将开播！先来回顾那些经典配乐
+							<p>阅读 9134</p>
+						</div>
+						
+						<img src="images/choice_02.png" alt="">
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="choice_imgp">
+						<div>
+							<span>专栏</span>
+						她的歌红遍全球，是2017年最不该错过的澳洲清新女声
+							<p>阅读 11105</p>
+						</div>
+						
+						<img src="images/choice_03.png" alt="">
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- 主播电台 -->
+		<div class="radio">
+			<a href="#">
+				<p class="title">主播电台 
+					<img src="images/right.png">
+				</p>
+			</a>
+
+			<!-- 图片 float:left 与推荐歌单一个样式-->
+			<div class="recommend_png">
+				<!-- 上面的图片 -->
+				<div class="recommend_top">
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_02.png" alt="">
+							<p>每周帮你消化一本好书</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_04.png" alt="">
+							<p>影响你未来的100次谈话</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_06.png" alt="">
+							<p>中外古今，历史趣事</p>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<!-- 下面的图片 -->
+				<div class="recommend_foot">
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_03.png" alt="">
+							<p>人气主播冯提莫的活力唱腔</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_05.png" alt="">
+							<p>知性女生陈一发的空灵音色</p>
+						</a>
+					</div>
+					<div class="recommend_imgp">
+						<a href="#">
+							<img src="images/radio_01.png" alt="">
+							<p>明星驾到记录音乐人的音乐故事...</p>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 调整栏目顺序 -->
+		<div class="change">
+			<a href="#">
+				<div class="change_btn">调整栏目顺序</div>
+			</a>
+		</div>
+		<!-- 为底部服务的 -->
+		<div class="kong"></div>
+		<!-- 底部固定栏 float布局-->
+		<div class="foot">
+			<div class="foot-imgp icon_01">
+				<p class="icon iconfont icon-wangyiyunyinlezizhi-copy"></p>
+				<p>发现音乐</p>
+			</div>
+			<div class="foot-imgp icon_02">
+				<p class="icon iconfont icon-yinyue"></p>
+				<p>我的音乐</p>
+			</div>
+			<div class="foot-imgp icon_03">
+				<p class="icon iconfont icon-ren"></p>
+				<p>朋友</p>
+			</div>
+			<div class="foot-imgp icon_04">
+				<p class="icon iconfont icon-ren1"></p>
+				<p>账号</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
+</html>
